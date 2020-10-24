@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700&display=swap');
+
+$colors: (#404759, #467f8c, #f2dd72, #f2bbbb, #382f4b, #005daa, #ab94fc, #abcdef, #c7e2cf, #c4beef, #ef4b3f, #134515);
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+    letter-spacing: -0.08ch !important;
+}
+
+@for $i from 1 through 12 {
+    $color: nth($list: $colors, $n: $i);
+
+    .c#{$i} {
+        #first {
+            background-color: $color;
+        }
+
+        #answer_container i.icon {
+            color: $color;
+        }
+    }
+}
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#color-changer {
+    position: absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    transition: 0.1s ease;
+
+    &:hover {
+        opacity: 0.85;
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
+    
+    span {
+        margin: 10px 15px;
+        opacity: 0.8;
+        color: rgba($color: #000000, $alpha: 0.6);
+        font-size: 20px;
+        user-select: none;
+        font-weight: 500;
+    }
+}
+
+#first,
+#second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#first {
+    position: relative;
+
+    .ui.container {
+        width: 80% !important;
+
+        .ui.form#question_form {
+            width: 100%;
+            padding: 3rem;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+            letter-spacing: -0.08ch !important;
+
+            .ui.message>* {
+                font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+                letter-spacing: inherit !important;
+            }
+
+            textarea {
+                background: transparent !important;
+            }
+
+            button,
+            textarea {
+                font-family: inherit !important;
+                letter-spacing: inherit !important;
+            }
+        }
+    }
+
+    a {
+        position: absolute;
+        bottom: 32px;
+        cursor: pointer;
+
+        img {
+            height: 24px;
+            width: auto;
+            transition: 0.5s ease;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+#second {
+    background-color: white;
+
+    .ui.container {
+        width: 80% !important;
+    }
+}
+
+#answer_container {
+    padding: 3rem 0;
+
+    .ui.segment {
+        padding: 3em 0 0 0;
+
+        .ui.medium.header {
+            font-weight: 500;
+            font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+        }
+
+        p {
+            font-weight: 400;
+            margin-bottom: 1em !important;
+        }
+    }
+
+    .ui.vertical.segment:first-child {
+        padding-top: 0;
+    }
+
+    .ui.vertical.segment:last-child {
+        border-bottom: 1px solid rgba(34, 36, 38, .15);
+    }
+}
+
+.hiu.section {
+    width: 100%;
+
+    &.full {
+        min-height: 100vh;
+    }
+
+    &.half {
+        min-height: 50vh;
+    }
+
+    &.quarter {
+        min-height: 25vh;
+    }
+
+    &.half.quarter {
+        min-height: 75vh;
+    }
+}
