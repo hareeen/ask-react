@@ -7,11 +7,8 @@ body,
 html {
     height: 100%;
     margin: 0;
-}
-
-*:not(.icon) {
-    letter-spacing: -0.08ch !important;
     font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+    letter-spacing: -0.08ch !important;
 }
 
 @for $i from 1 through 12 {
@@ -28,10 +25,10 @@ html {
     }
 }
 
-.aligner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 #color-changer {
@@ -82,8 +79,11 @@ html {
             padding: 3rem;
             background-color: white;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+            letter-spacing: -0.08ch !important;
 
             .ui.message>* {
+                font-family: "Raleway", "Noto Sans KR", sans-serif !important;
                 letter-spacing: inherit !important;
             }
 
@@ -126,7 +126,7 @@ html {
 
 #answer_container {
     padding: 3rem 0;
-    
+
     .ui.segment {
         padding: 3em 0 0 0;
 
@@ -145,8 +145,8 @@ html {
         padding-top: 0;
     }
 
-    button {
-        margin-top: 3em;
+    .ui.vertical.segment:last-child {
+        border-bottom: 1px solid rgba(34, 36, 38, .15);
     }
 }
 
