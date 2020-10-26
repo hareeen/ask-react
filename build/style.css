@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700&display=swap");
+body,
+html {
+  height: 100%;
+  margin: 0; }
+
+*:not(.icon) {
+  letter-spacing: -0.08ch !important;
+  font-family: "Raleway", "Noto Sans KR", sans-serif !important; }
+
+.c1 #first {
+  background-color: #404759; }
+.c1 #answer_container i.icon {
+  color: #404759; }
+
+.c2 #first {
+  background-color: #467f8c; }
+.c2 #answer_container i.icon {
+  color: #467f8c; }
+
+.c3 #first {
+  background-color: #f2dd72; }
+.c3 #answer_container i.icon {
+  color: #f2dd72; }
+
+.c4 #first {
+  background-color: #f2bbbb; }
+.c4 #answer_container i.icon {
+  color: #f2bbbb; }
+
+.c5 #first {
+  background-color: #382f4b; }
+.c5 #answer_container i.icon {
+  color: #382f4b; }
+
+.c6 #first {
+  background-color: #005daa; }
+.c6 #answer_container i.icon {
+  color: #005daa; }
+
+.c7 #first {
+  background-color: #ab94fc; }
+.c7 #answer_container i.icon {
+  color: #ab94fc; }
+
+.c8 #first {
+  background-color: #abcdef; }
+.c8 #answer_container i.icon {
+  color: #abcdef; }
+
+.c9 #first {
+  background-color: #c7e2cf; }
+.c9 #answer_container i.icon {
+  color: #c7e2cf; }
+
+.c10 #first {
+  background-color: #c4beef; }
+.c10 #answer_container i.icon {
+  color: #c4beef; }
+
+.c11 #first {
+  background-color: #ef4b3f; }
+.c11 #answer_container i.icon {
+  color: #ef4b3f; }
+
+.c12 #first {
+  background-color: #134515; }
+.c12 #answer_container i.icon {
+  color: #134515; }
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#color-changer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: 0.1s ease; }
+  #color-changer:hover {
+    opacity: 0.85; }
+  #color-changer:active {
+    opacity: 0.7; }
+  #color-changer span {
+    margin: 10px 15px;
+    opacity: 0.8;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    user-select: none;
+    font-weight: 500; }
+
+#first,
+#second {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#first {
+  position: relative; }
+  #first .ui.container {
+    width: 80% !important; }
+    #first .ui.container .ui.form#question_form {
+      width: 100%;
+      padding: 3rem;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      #first .ui.container .ui.form#question_form .ui.message > * {
+        letter-spacing: inherit !important; }
+      #first .ui.container .ui.form#question_form textarea {
+        background: transparent !important; }
+      #first .ui.container .ui.form#question_form button,
+      #first .ui.container .ui.form#question_form textarea {
+        font-family: inherit !important;
+        letter-spacing: inherit !important; }
+  #first a {
+    position: absolute;
+    bottom: 32px;
+    cursor: pointer; }
+    #first a img {
+      height: 24px;
+      width: auto;
+      transition: 0.5s ease; }
+      #first a img:hover {
+        opacity: 0.8; }
+
+#second {
+  background-color: white; }
+  #second .ui.container {
+    width: 80% !important; }
+
+#answer_container {
+  padding: 3rem 0; }
+  #answer_container .ui.segment {
+    padding: 3em 0 0 0; }
+    #answer_container .ui.segment .ui.medium.header {
+      font-weight: 500;
+      font-family: "Raleway", "Noto Sans KR", sans-serif !important; }
+    #answer_container .ui.segment p {
+      font-weight: 400;
+      margin-bottom: 1em !important; }
+  #answer_container .ui.vertical.segment:first-child {
+    padding-top: 0; }
+  #answer_container button {
+    margin-top: 3em; }
+
+.hiu.section {
+  width: 100%; }
+  .hiu.section.full {
+    min-height: 100vh; }
+  .hiu.section.half {
+    min-height: 50vh; }
+  .hiu.section.quarter {
+    min-height: 25vh; }
+  .hiu.section.half.quarter {
+    min-height: 75vh; }
+
+/*# sourceMappingURL=style.css.map */
