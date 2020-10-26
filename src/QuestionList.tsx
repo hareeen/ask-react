@@ -109,7 +109,7 @@ export default function QuestionList(props: QuestionListProps) {
       <Container id="answer_container">
         {questionList.map((questionData) => questionData.elem)}
         <div className="aligner">
-          <Button basic loading={loading} onClick={() => { props.setWillUpdate(2); }}>
+          <Button basic disabled={questionList.length === totalLength} loading={loading} onClick={() => { props.setWillUpdate(2); }}>
             {`더 불러오기 (${questionList.length}/${totalLength})`}
           </Button>
         </div>

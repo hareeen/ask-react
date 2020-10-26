@@ -11,6 +11,6 @@ export default function ColorChanger(props: ColorChangerProps) {
       <span>
         {`✦ ${props.colorCode.slice(1)}`}
       </span>
-    </div>  
+    </div>
   );
 }
